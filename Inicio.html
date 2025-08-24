@@ -1,0 +1,243 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Portafolio Juan Esteban Serna</title>
+</head>
+<body>
+    <!-- Loader mientras se carga el portafolio -->
+    <div id="loader" class="loader">
+        <div class="loader-circle">
+            <p>Cargando Portafolio</p>
+        </div>
+    </div>
+ 
+    <!-- Botón para cambiar el tema -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="cambiar tema">
+        <i class="fas fa-moon"></i>
+    </button>
+ 
+    <!-- Encabezado con navegación -->
+    <header id="header" class="header">
+        <div id="contenedor">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Juan Esteban Serna :D <span class="accent">.</span></h1>
+                </div>
+                <nav class="navegacion-principal" id="nav">
+                    <a href="#inicio" class="nav-link nav-link-active">Inicio</a>
+                    <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+                    <a href="#habilidades" class="nav-link">Habilidades</a>
+                    <a href="#portafolio" class="nav-link">Portafolio</a>
+                    <a href="#experiencia" class="nav-link">Experiencia</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="toggle menu">
+                        <span class="hamburger"></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+ 
+    <!-- Sección Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero background">
+            <!-- Partículas para animaciones visuales -->
+            <div class="hero-particles"></div>
+ 
+            <!-- Contenido de la sección hero -->
+            <div class="contenido-hero contenedor"></div>
+           
+            <!-- Texto de bienvenida -->
+            <div class="hero-text fade-in">
+                <p class="hero-greeting">Hola soy</p>
+                <h1 class="hero-title">
+                    <span>Juan Serna</span>
+                </h1>
+                <h2 class="hero-subtitle">Desarrollador Frontend</h2>
+                <p class="hero-description">"Si puedes imaginarlo, puedes crearlo."</p>
+            </div>
+ 
+            <!-- Botones para navegar -->
+            <div class="hero-button">
+                <a href="#portafolio" class="btn-primary">Ver portafolio</a>
+                <a href="#contacto" class="btn-secondary">Contactar</a>
+            </div>
+ 
+            <!-- Imagen de perfil -->
+            <div class="hero-image fade-in-right">
+                <div class="image-container"></div>
+                <div class="image-border"></div>
+                <div class="profile-image"></div>
+                <i class="fas fa-user-circle"></i>
+            </div>
+ 
+            <!-- Indicador de desplazamiento -->
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Sobre mí -->
+    <section class="sobre-mi section" id="sobre-mi">
+        <div class="contenedor">
+            <div class="section-header">
+                <h2 class="section-title">Sobre mí</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="sobre-mi-content">
+                <p class="info-text">
+                    Soy desarrollador apasionado por la tecnología, etc.
+                </p>
+                <p>Con más de 0.1 años de experiencia 😍😊(❁´◡`❁)</p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>+1</h3>
+                        <p>Proyectos completos</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>+0.1</h3>
+                        <p>Años de Experiencia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sobre-mi-skills">
+                <h3>¿Por qué elegirme?</h3>
+                <div class="skills-list">
+                    <!-- Primer skill-->
+                    <div class="skills-item">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <h4>Código Limpio</h4>
+                            <p>Porque...</p>
+                        </div>
+                    </div>
+                    <!-- Segundo skill-->
+                    <div class="skills-item">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <h4>Comunicación clara</h4>
+                            <p>............................</p>
+                        </div>
+                    </div>
+                    <!-- Tercer skill-->
+                    <div class="skills-item">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <h4>Habilidad 3</h4>
+                            <p>............................</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Sección habilidades -->
+    <section class="habilidades section" id="habilidades">
+        <div class="contenedor">
+            <div class="section-header">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="section-divider"></div>
+            </div>
+ 
+            <!-- Sección de categorías de habilidades-->
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-grid">
+                        <!-- Tarjeta HTML5 -->
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML5</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skills="95"></div>
+                            </div>
+                            <span class="skill-percentage">73%</span>
+                        </div>
+ 
+                        <!-- Tarjeta CSS3 -->
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h4>CSS3</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skills="90"></div>
+                            </div>
+                            <span class="skill-percentage">50%</span>
+                        </div>
+ 
+                        <!-- Tarjeta JavaScript -->
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skills="80"></div>
+                            </div>
+                            <span class="skill-percentage">40%</span>
+                        </div>
+                    </div>
+                </div>
+<!-- Backend Categorías -->
+<div class="skills-category">
+    <h3>Backend</h3>
+    <div class="skill-grid">
+        <!-- Tarjeta Java -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fab fa-java"></i>
+            </div>
+            <h4>Java</h4>
+            <div class="skill-bar">
+                <div class="skill-progress" data-skills="60"></div>
+            </div>
+            <span class="skill-percentage">60%</span>
+        </div>
+
+        <!-- Tarjeta MySQL -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fa-solid fa-database"></i>
+            </div>
+            <h4>MySQL</h4>
+            <div class="skill-bar">
+                <div class="skill-progress" data-skills="60"></div>
+            </div>
+            <span class="skill-percentage">60%</span>
+        </div>
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+    </section>
+ <!-- Sección portafolio -->
+<section class="portafolio section" id="portafolio">
+    <div class="contenedor">
+        <div class="section-header">
+            <h2 class="section-title">Portafolio</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="portafolio-filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="Web">Web apps</button>
+            <button class="filter-btn" data-filter="mobile">mobiles</button>
+            <button class="filter-btn" data-filter="ecomercer">E-comerce</button>
+        </div>
+    </div>
+</section>
+ 
+ 
+</body>
+</html>
