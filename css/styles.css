@@ -1194,7 +1194,6 @@ button {
     font-weight: var(--font-weight-semibold);           /* Peso semibold */
     display: flex; align-items: center; justify-content: center; /* Centra contenido */
     gap: 1rem;                                          /* Espacio entre texto e ícono */
-    transition: all var(--transition-normal);           /* Suaviza hover/active */
 }
 
 .submit-btn:hover {
@@ -1408,5 +1407,45 @@ button {
     body {
         background: white !important;                   /* Fondo blanco para imprimir */
         color: black !important;                        /* Texto negro para contraste */
+    }
+}
+
+/* Flexbox para .skills-grid: Unity y Blender en fila, tamaño más grande */
+#otras-habilidades .skills-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+#otras-habilidades .skill-card {
+    flex: 1 1 350px;
+    max-width: 500px;
+    min-width: 350px;
+    font-size: 2rem;
+    padding: 3rem 2.5rem;
+}
+
+#otras-habilidades .skill-icon {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+/* Responsive: apilar verticalmente en pantallas menores a 600px */
+@media (max-width: 600px) {
+    #otras-habilidades .skills-grid {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #otras-habilidades .skill-card {
+        max-width: 100%;
+        min-width: 0;
+        font-size: 1.8rem;
+        padding: 2.5rem 1.5rem;
+    }
+    #otras-habilidades .skill-icon {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
     }
 }
