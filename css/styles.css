@@ -6,11 +6,11 @@
     --text-primary: #22223b;         /* Texto principal oscuro */
     --text-secondary: #4a4e69;       /* Texto secundario gris */
     --text-muted: #9a8c98;           /* Texto tenue */
-    --background: #f8f9fa;           /* Fondo claro */
-    --surface: #ffffff;              /* Fondo de tarjetas */
-    --border: #e9ecef;               /* Bordes claros */
+    --background: #e9ecef; /* Fondo general */
+    --surface: #e9ecef;    /* Fondo de tarjetas */
+    --border: #e9ecef;     /* Bordes */
     --shadow: rgba(56, 176, 0, 0.1); /* Sombra verde suave */
-    --overlay: rgba(255, 255, 255, 0.9); /* Fondo semitransparente para overlays */
+    --overlay: rgba(233, 236, 239, 0.95); /* Overlay adaptado */
 
     /* --- Colores para el tema oscuro --- */
     --dark-primary: #1e3a8a;         /* Azul oscuro */
@@ -97,7 +97,7 @@ body {
     font-size: 1.6rem;                  /* Tamaño base de texto (16px) */
     line-height: 1.6;                   /* Altura de línea para mejor legibilidad */
     color: var(--text-primary);         /* Color principal de texto */
-    background-color: var(--background);/* Color de fondo del sitio */
+    background-color: var(--background);
     overflow-x: hidden;                 /* Evita scroll horizontal accidental */
     transition: background-color var(--transition-normal); /* Suaviza cambio de fondo (ej. al cambiar tema) */
 }
@@ -139,7 +139,7 @@ button {
 }
 
 .section:nth-child(even) {
-    background-color: var(--surface);   /* Fondo alterno para secciones pares */
+    background-color: var(--surface);
 }
 
 .section-header {
@@ -222,7 +222,7 @@ button {
     top: 0; left: 0;                    /* Ocupa desde la esquina superior izquierda */
     width: 100%;                        /* Ancho completo */
     height: 100vh;                      /* Alto de la ventana */
-    background: var(--background);      /* Fondo acorde al tema */
+    background: var(--background);
     display: flex;                      /* Centrado con flexbox */
     justify-content: center;            /* Centra horizontalmente */
     align-items: center;                /* Centra verticalmente */
@@ -259,7 +259,7 @@ button {
     top: 2rem; right: 2rem;             /* Posición en esquina superior derecha */
     width: 5rem; height: 5rem;          /* Tamaño del botón circular */
     border-radius: 50%;                 /* Forma circular */
-    background: var(--surface);         /* Fondo según tema */
+    background: var(--surface);
     color: var(--text-primary);         /* Color del ícono */
     border: 0.2rem solid var(--border); /* Borde sutil */
     display: flex;                      /* Centrado del ícono */
@@ -312,6 +312,7 @@ button {
 .navegacion-principal {
     display: flex;                      /* Menú en fila (desktop) */
     gap: 3rem;                          /* Separación entre enlaces */
+    background: var(--background);
 }
 
 .nav-link {
@@ -1102,7 +1103,7 @@ button {
 
 .social-links {
     padding: 2rem;                                      /* Espaciado interno del bloque de redes */
-    background: var(--surface);                         /* Fondo de tarjeta */
+    background: var(--surface);
     border-radius: var(--radius-lg);                    /* Bordes redondeados */
     border: 0.1rem solid var(--border);                 /* Borde sutil */
 }
@@ -1136,7 +1137,7 @@ button {
 
 /* Contact Form */
 .contact-form-container {
-    background: var(--surface);                         /* Fondo del contenedor del formulario */
+    background: var(--surface);
     padding: 4rem;                                      /* Espaciado interno */
     border-radius: var(--radius-lg);                    /* Bordes redondeados */
     border: 0.1rem solid var(--border);                 /* Borde sutil */
@@ -1221,7 +1222,7 @@ button {
    =============================================== */
 
 .footer {
-    background: var(--text-primary);                    /* Fondo oscuro (usa color de texto para contraste) */
+    background: var(--surface);
     color: var(--surface);                              /* Texto claro */
     padding: 6rem 0 2rem;                               /* Espaciado arriba y abajo */
 }
@@ -1231,6 +1232,7 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas fluidas mínimo 250px */
     gap: 4rem;                                          /* Separación entre columnas */
     margin-bottom: 4rem;                                /* Espacio con la franja inferior */
+    background: var(--surface);
 }
 
 .footer-section h3,
@@ -1329,7 +1331,7 @@ button {
     position: fixed;                                    /* Botón flotante fijo */
     bottom: 2rem; right: 2rem;                          /* Ubicado en esquina inferior derecha */
     width: 5rem; height: 5rem;                          /* Tamaño del botón circular */
-    background: var(--primary-color);                   /* Fondo primario */
+    background: var(--surface);
     color: white;                                       /* Ícono blanco */
     border-radius: 50%;                                 /* Círculo */
     display: flex; align-items: center; justify-content: center;
