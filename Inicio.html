@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Esteban Serna - Desarrollador Full Stack</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+   
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Header with Navigation -->
+    <header class="header" id="header">
+        <div class="contenedor">
+            <div class="nav-wrapper">  <!-- Contenedor para el logo y la navegación -->
+                <div class="logo">  <!-- Logo del sitio -->
+                    <h1 class="logo-text">Juan Esteban Serna <span class="accent">.</span></h1>
+                </div>
+                <nav class="navegacion-principal" id="nav">
+                    <a href="#inicio" class="nav-link active">Inicio</a>
+                    <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+                    <a href="#habilidades" class="nav-link">Habilidades</a>
+                    <a href="#otras-habilidades" class="nav-link">Otras Habilidades</a>
+                    <a href="#portafolio" class="nav-link">Portafolio</a>
+                    <a href="#experiencia" class="nav-link">Experiencia</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+        </div>
+        <div class="contenido-hero contenedor">
+            <div class="hero-text fade-in">
+                <p class="hero-greeting">¡Hola! Soy</p>
+                <h1 class="hero-title">
+                    <span class="highlight">Juan Esteban Serna</span>
+                </h1>
+                <h2 class="hero-subtitle">Desarrollador De Software </h2>
+                <p class="hero-description">
+                  "Especializado en el desarrollo de software,
+                   desde experiencias web modernas y funcionales hasta proyectos pequeños de video juegos
+                  Transformo ideas en soluciones digitales creativas 
+
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portafolio" class="btn-primary">Ver Portafolio</a>
+                    <a href="#contacto" class="btn-secondary">Contactar</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-right">
+                <div class="image-container">
+                    <div class="image-border"></div>
+                    <div class="profile-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="sobre-mi section" id="sobre-mi">
+        <div class="contenedor">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="sobre-mi-content">
+                <div class="sobre-mi-text">
+                    <p class="intro-text">
+                       Soy un desarrollador apasionado por crear soluciones tecnológicas que generen
+                        impacto real en los usuarios
+                    </p>
+                    <p>
+                      me especializo en tecnologías modernas como JavaScript, Java y MySQL.
+                       Además, he ampliado mis habilidades en el desarrollo de videojuegos con Unity y el diseño 3D en Blender
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3>4+</h3>
+                            <p>Proyectos Completados</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>1+</h3>
+                            <p>Años de Experiencia</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>2+</h3>
+                            <p>Clientes Satisfechos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-mi-skills">
+                    <h3>¿Por qué elegirme?</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Aprendizaje constante</h4>
+                                <p>Siempre busco mejorar mis habilidades y aplicar lo que aprendo en cada proyecto</p>
+                                 
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <h4>Compromiso</h4>
+                                <p>Cumplo con mis responsabilidades y doy mi mejor esfuerzo para entregar resultados.
+                                    Creatividad y curiosidad</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Comunicación Clara</h4>
+                                <p>Mantengo una comunicación constante y transparente durante todo el proceso</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section class="habilidades section" id="habilidades">
+        <div class="contenedor">
+            <div class="section-header">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="section-divider"></div>
+            </div>
+            <!-- Modificado: skills-container ahora es un grid de dos columnas -->
+            <div class="skills-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="70"></div>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i> 
+                            </div>
+                            <h4>CSS3</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="60"></div>
+                            </div>
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="20"></div>
+                            </div>
+                            <span class="skill-percentage">20%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h4>Java</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="70"></div>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>MySQL</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="60"></div>
+                            </div>
+                            <span class="skill-percentage">60%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Skills Section -->
+    <section class="habilidades section" id="otras-habilidades">   <!-- Sección de habilidades técnicas -->
+        <div class="contenedor">
+            <div class="section-header">
+                <h2 class="section-title">Otras Habilidades</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Desarrollo de Juegos</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h4>Unity</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="40"></div>
+                            </div>
+                            <span class="skill-percentage">40%</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <h4>Blender</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-skill="40"></div>
+                            </div>
+                            <span class="skill-percentage">40%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+  <section class="portafolio section" id="portafolio" style="--primary-color: #06b6d4;">  <!-- Sección de portafolio -->
+        <div class="contenedor">
+            <div class="section-header">
+                <h2 class="section-title">Portafolio</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Pagina Pagina web Recetas</h3>
+                                <p>Pagina web recetas de la abuela </p>
+                                <div class="portfolio-links">
+                                    <a href="https://juaness601.github.io/Recetas-de-la-abuela-en-la-web/" class="portfolio-link" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="https://github.com/Juaness601/Recetas-de-la-abuela-en-la-web" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>E-commerce Store</h3>
+                                <p> plicación web para gestión de  Catalogo online</p>
+                                <div class="portfolio-links">
+                                    <a href="https://juaness601.github.io/Parste-y-accesorios-NS/" class="portfolio-link" target="_blank"><i class="fas fa-eye"></i></a>
+                                    <a href="https://github.com/Juaness601/Parste-y-accesorios-NS" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Pagina Mascotas</h3>
+                                <p>Pagina de Adopcopn de mascoas</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Aplicación móvil Procximamente</h3>
+                                <p>Aplicación móvil Procximamente</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Experience Section -->
+<section class="experiencia section" id="experiencia">
+    <div class="contenedor">
+        <div class="section-header">
+            <h2 class="section-title">Experiencia</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Desarrollador Web</h3>
+                        <span class="timeline-date">2024</span>
+                    </div>
+                    <h4>Recetas de la Abuela</h4>
+                    <p>Desarrollo de una página web de recetas familiares utilizando HTML, CSS y JavaScript. 
+                       Implementación de un diseño moderno, responsivo y optimizado para la experiencia de usuario.
+                       Control de versiones y despliegue mediante GitHub Pages.</p>
+                    <div class="timeline-skills">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Desarrollador Web</h3>
+                        <span class="timeline-date">2025 - Presente</span>
+                    </div>
+                    <h4>E-commerce Store - Partes y Accesorios NS</h4>
+                    <p>Aplicación web para la gestión del catálogo online de la empresa, mejorando la presencia digital 
+                       y permitiendo una administración sencilla de productos.</p>
+                    <div class="timeline-skills">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Desarrollador Web</h3>
+                        <span class="timeline-date">2025</span>
+                    </div>
+                    <h4>Página de Mascotas</h4>
+                    <p>Creación de una página informativa sobre mascotas con diseño moderno y atractivo,
+                       desarrollada con HTML, CSS y JavaScript, utilizando Git para control de versiones.</p>
+                    <div class="timeline-skills">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    
+    <!-- Contact Section -->
+    <section class="contacto section" id="contacto">
+        <div class="contenedor">
+            <div class="section-header">
+                <h2 class="section-title">Contacto</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>juanessgu@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Teléfono</h3>
+                            <p>+57 3106654522</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Ubicación</h3>
+                            <p>Colombia</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Sígueme en redes</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="footer-content">
+                <div class="footer-section" style="color:#000;">
+                    <h3 style="color:#000;">Juan Esteban Serna</h3>
+                    <p style="color:#222;">Desarrollador Full Stack apasionado por crear soluciones web innovadoras.</p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" style="color:#000;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="footer-social-link" style="color:#000;"><i class="fab fa-github"></i></a>
+                        <a href="#" class="footer-social-link" style="color:#000;"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section" style="color:#000;">
+                    <h4 style="color:#000;">Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio" style="color:#000;">Inicio</a></li>
+                        <li><a href="#sobre-mi" style="color:#000;">Sobre Mí</a></li>
+                        <li><a href="#habilidades" style="color:#000;">Habilidades</a></li>
+                        <li><a href="#otras-habilidades" style="color:#000;">Otras Habilidades</a></li>
+                        <li><a href="#portafolio" style="color:#000;">Portafolio</a></li>
+                        <li><a href="#contacto" style="color:#000;">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" style="color:#000;">
+                    <h4 style="color:#000;">Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" style="color:#000;">Desarrollo Web</a></li>
+                        <li><a href="#" style="color:#000;">Aplicaciones JavaScript</a></li>
+                        <li><a href="#" style="color:#000;">Backend Java</a></li>
+                        <li><a href="#" style="color:#000;">Bases de Datos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" style="color:#000;">
+                    <h4 style="color:#000;">Contacto</h4>
+                    <div class="footer-contact">
+                        <p style="color:#000;"><i class="fas fa-envelope"></i> juan.esteban@email.com</p>
+                        <p style="color:#000;"><i class="fas fa-phone"></i> +57 300 123 4567</p>
+                        <p style="color:#000;"><i class="fas fa-map-marker-alt"></i> Colombia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom" style="color:#000;">
+                <p style="color:#000;">&copy; 2024 Juan Esteban Serna. Todos los derechos reservados.</p>
+                <p style="color:#000;">Desarrollado con ❤️ y mucho café</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
